@@ -1,5 +1,5 @@
 #!/bin/bash -x
-#Author: Nicole Green
+#Author: Occams Reiza
 #17-11-2012
 
 
