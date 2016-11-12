@@ -80,7 +80,7 @@ close (FILE);
 }
 }
 #Create Timestamp file
-open( TIME, " > / tmp/ctmonitor . ts " ) ; print TIME " $currenttime\n " ; close TIME;
+open( TIME, " > /tmp/ctmonitor.ts " ) ; print TIME " $currenttime\n " ; close TIME;
 
 #Convert Months to Human Readable sub load_monthsmonths
 sub load_months
