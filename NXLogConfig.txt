@@ -7,9 +7,9 @@
 ###############################################################################
 
 ## Specify the TAP Sender IP address to send logs to by replacing X.X.X.X
-define TAP_Sender_IP X.X.X.X
-## If instructed, specify alternate TAP Sender Port to send logs to (defaulted to 515)
-define TAP_Sender_Port 514
+define TAP_CC_IP X.X.X.X
+## If instructed, specify alternate TAP Sender Port to send logs to (defaulted to 514)
+define TAP_CC_Port 514
 
 ########################################
 # Global Directives                    #
@@ -85,7 +85,6 @@ LogLevel INFO
     to_json();
 </Input>
 
-
 ##############################################
 # OUTPUT TAP Senders (UNENCRYPTED)           #
 ##############################################
@@ -99,8 +98,7 @@ LogLevel INFO
 ########################################
 # Default Route                        #
 ########################################
-
 <Route primary>
-  Path ms_security, ms_application,ms_dns => udp_sender
+Path ms_security,ms_application,ms_dns => udp_sender
 </Route>
 
